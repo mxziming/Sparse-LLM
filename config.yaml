@@ -1,0 +1,17 @@
+dsa_reproduce:
+  # 训练和推理使用的分词器/基座模型
+  tokenizer_path: ./Qwen2.5-0.5B
+  base_model_path: ./Qwen2.5-0.5B
+
+  # 原始指令微调数据与预处理输出
+  raw_data_path: ./LongAlpaca-12k/LongAlpaca-12k.json
+  raw_parquet_folder: ./WritingPrompts
+  train_data_path: ./warmup_data.jsonl
+
+  # warmup（step1）阶段的输出与模型保存位置
+  warmup_output_path: ./warmup_output
+  warmup_model_path: ./warmuped_model
+
+  # 联合训练（step2）阶段的输出与模型保存位置
+  train_output_path: ./train_output
+  train_model_path: ./trained_model
