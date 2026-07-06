@@ -35,6 +35,12 @@ The goal of this project is to investigate whether sparse attention can accelera
 
 ---
 
+## Dataset
+
+We use WrtingPrompt (https://huggingface.co/datasets/euclaise/writingprompts) as our training and evaluation dataset. You can choose your own dataset, which won't affect the results.
+
+---
+
 ## Method Overview
 
 ### 1. Learnable Indexer
